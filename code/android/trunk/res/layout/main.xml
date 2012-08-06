@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fuel_type_l"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="25dip"
+                android:layout_marginTop="10dip"
+                android:text="@string/main_activity_fuel_type"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14dip" />
+
+            <Spinner
+                android:id="@+id/fuel_type_i"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:prompt="@string/main_activity_fuel_type_h"/>
+            
+            <TextView
+                android:id="@+id/fuel_unit_price_l"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="25dip"
+                android:layout_marginTop="10dip"
+                android:text="@string/main_activity_fuel_unit_price"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14dip" />
+
+            <EditText
+                android:id="@+id/fuel_unit_price_i"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:ems="10"
+                android:hint="@string/main_activity_fuel_unit_price_h"
+                android:inputType="numberDecimal" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/main_activity_fuel_by_price_l"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="25dip"
+                android:layout_marginTop="10dip"
+                android:text="@string/main_activity_fuel_by_price"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14dip" />
+
+            <EditText
+                android:id="@+id/main_activity_fuel_by_price_i"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:ems="10"
+                android:hint="@string/main_activity_fuel_by_price_h"
+                android:inputType="numberDecimal" />
+
+             <TextView
+                android:id="@+id/main_activity_fuel_l"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="25dip"
+                android:layout_marginTop="10dip"
+                android:text="@string/main_activity_fuel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14dip" />
+
+            <EditText
+                android:id="@+id/main_activity_fuel_i"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:ems="10"
+                android:hint="@string/main_activity_fuel_h"
+                android:inputType="numberDecimal" />
+            
+            <TextView
+                android:id="@+id/main_activity_km_l"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="25dip"
+                android:layout_marginTop="10dip"
+                android:text="@string/main_activity_km"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14dip" />
+
+            <EditText
+                android:id="@+id/main_activity_km_i"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:ems="10"
+                android:hint="@string/main_activity_km_h"
+                android:inputType="numberDecimal" />
+
+            <Button
+                android:id="@+id/main_activity_calculate_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dip"
+                android:text="@string/main_activity_calculate_l" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

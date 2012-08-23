@@ -13,6 +13,4 @@ public class MessageUtil {
 		Toast.makeText(context, msg,
 				islong ? Toast.LENGTH_LONG : Toast.LENGTH_SHORT).show();
 	}
-	
-	
 }

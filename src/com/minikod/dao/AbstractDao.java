@@ -20,8 +20,8 @@ public abstract class AbstractDao {
 	 * db name and ns must be set app's db name anda package name
 	 */
 	public static String DB_NAME;
-	public static String PACKAGE_NAME;
-	protected String TBL_NAME;
+	public static String PACKAGE_NAME ;
+	protected String TBL_NAME ;
 	protected SQLiteDatabase sql;
 	protected String[] attrs;
 
@@ -90,12 +90,11 @@ public abstract class AbstractDao {
 			throw new DaoServiceException(e);
 		}
 	}
-
+	
 	public int getMaxId() throws DaoServiceException {
-		Cursor cursor = null;
 		try {
 			String query = "SELECT MAX(id) AS max_id FROM " + TBL_NAME;
-			cursor = sql.rawQuery(query, null);
+			Cursor cursor = sql.rawQuery(query, null);
 			int id = 0;
 			if (cursor.moveToFirst()) {
 				do {
@@ -103,13 +102,9 @@ public abstract class AbstractDao {
 				} while (cursor.moveToNext());
 			}
 			return id;
+
 		} catch (Exception e) {
 			throw new DaoServiceException(e);
-		}finally{
-			if(cursor!=null)
-			{
-				cursor.close();
-			}
 		}
 	}
 

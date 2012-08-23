@@ -61,10 +61,9 @@ public class RecordDao extends AbstractDao {
 	}
 
 	public List<Record> getRecordList() {
-		Cursor cur = null;
 		try {
 			List<Record> recs = new ArrayList<Record>();
-			cur = getAllRows(TBL_NAME, attrs);
+			Cursor cur = getAllRows(TBL_NAME, attrs);
 			cur.moveToFirst();
 			do {
 				try {
@@ -87,12 +86,7 @@ public class RecordDao extends AbstractDao {
 			return recs;
 		} catch (Exception e) {
 			e.toString();
-		} finally {
-			if (cur != null) {
-				cur.close();
-			}
 		}
-
 		return new ArrayList<Record>();
 	}
 
@@ -105,23 +99,13 @@ public class RecordDao extends AbstractDao {
 
 	}
 
-	public void clearProfileRecords(int id) throws DaoServiceException {
-		try {
-			sql.execSQL("DELETE FROM " + TBL_NAME + " where profile=" + id);
-		} catch (Exception e) {
-			throw new DaoServiceException(e);
-		}
-
-	}
-
 	public List<Record> getRecordListbyProfile(int profileId)
 			throws DaoServiceException {
-		Cursor cur = null;
+		List<Record> recs = new ArrayList<Record>();
 		try {
 			String query = "SELECT id,type, unitPrice, fuelByPrice, fuel,km, date,profile   FROM "
 					+ TBL_NAME + " where profile = " + profileId;
-			cur = sql.rawQuery(query, null);
-			List<Record> recs = new ArrayList<Record>();
+			Cursor cur = sql.rawQuery(query, null);
 			cur.moveToFirst();
 			do {
 				try {
@@ -141,22 +125,10 @@ public class RecordDao extends AbstractDao {
 					e.printStackTrace();
 				}
 			} while (cur.moveToNext());
-			return recs;
-		} catch (Exception e) {
-			throw new DaoServiceException(e);
-		} finally {
-			if (cur != null) {
-				cur.close();
-			}
-		}
-	}
-	
-	public void deleteRecord(int id) throws DaoServiceException {
-		try {
-			sql.execSQL("DELETE FROM " + TBL_NAME +" where id="+id);
-		} catch (Exception e) {
-			throw new DaoServiceException(e);
-		}
 
+		} catch (Exception e) {
+			throw new DaoServiceException(e);
+		}
+		return recs;
 	}
 }

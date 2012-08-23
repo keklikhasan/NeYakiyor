@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">Ne Yakıyor</string>
-    <string name="main_activity_label">Ne Yakıyor</string>
+    <string name="main_activity_label">Yakıt Hesaplama</string>
     <string name="main_activity_fuel_type">Yakıt Tipi</string>
     <string name="main_activity_fuel_type_h">Yakıt Tipi Seçiniz</string>
     <string name="main_activity_fuel_type_ne">Yakıt Tipi Seçmediniz</string>
@@ -26,37 +26,10 @@
     <string name="aboutus_activity_text">Hakkımızda Text</string>
     <string name="result_activity_label">Sonuç</string>
     <string name="result_activity_save_b">Kaydet</string>
-    <string name="result_activity_choose_b">Seç</string>
-    <string name="result_activity_new_pro_add">Yeni Profil Ekleme</string>
-    <string name="result_activity_which_pro">Hangi Profile Eklensin</string>
-    <string name="result_activity_new_pro_hint">Araç tanımı</string>
-    <string name="result_activity_100_km_l">100 km\'de tüketilen yakıt miktarı (Litre);</string>
-    <string name="result_activity_1_km_l">1KM\'ye ödenen ücret (Kuruş)</string>
-    <string name="result_activity_save_suc">Başarı ile kaydedildi</string>
-    <string name="result_activity_save_warn">Kayıt eklemek için öncelikle bir profil girmelisiniz. Hiç profil kaydı bulunmuyor. Eklemek ister misiniz?</string>
+    <string name="result_activity_label1_l">100 km\'de tüketilen yakıt miktarı (Litre);</string>
+    <string name="result_activity_label2_l">1KM\'ye ödenen ücret (Kuruş)</string>
     <string name="history_activity_label">Geçmiş</string>
-    <string name="history_activity_warn_del">Profil Silinecek emin misiniz ?</string>
-    <string name="history_activity_warn_head">Uyarı</string>
-    <string name="history_activity_del_suc">Profil Silindi</string>
-    <string name="history_activity_add_pro">Yeni Profil Ekle</string>
-    <string name="history_activity_pro_suc">Profil Eklendi</string>
-    <string name="pro_history_activity_label">Profil Geçmişi</string>
-    <string name="pro_history_activity_warn_del">Kayıt Silinecek emin misiniz ?</string>
-    <string name="pro_history_activity_warn_head">Uyarı</string>
-    <string name="pro_history_activity_del_suc">Kayıt Silindi</string>
-    <string name="pro_history_activity_clean">Temizle</string>
-    <string name="pro_history_activity_clean_q">Tüm kayıtlar silinecektir emin misiniz?</string>
-    <string name="pro_history_activity_clean_suc">Temizlendi</string>
-    <string name="rec_history_label">Kayıt</string>
-    <string name="rec_history_menu_del">Kaydı Sil</string>
-     <string name="rec_history_warn">Uyarı</string>
-     <string name="rec_history_del_q">Kayıt Silinsin mi?</string>
-     <string name="rec_history_del_suc">Kayıt silindi</string>
-    <string name="app_yes">Evet</string>
-    <string name="app_no">Hayır</string>
-    <string name="app_exit">Çıkış</string>
-    <string name="app_exit_q">Uygulamdan çıkmak istediğinize emin misiniz ?</string>
-
+	<string name="profile_activity_label">Profil</string>
     <string-array name="fuel_types">
         <item>Benzin</item>
         <item>Lpg</item>

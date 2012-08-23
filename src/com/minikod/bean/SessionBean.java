@@ -23,11 +23,14 @@ public class SessionBean implements Serializable {
 				} else {
 					session.put(name, object);
 				}
-			}else
-			{
-				session.remove(name);
 			}
+			// else {
+			// throw new Exception("Cannot be set null value");
+			// }
 		}
+		// else {
+		// throw new Exception("Cannot be set null value name");
+		// }
 	}
 
 	public static Object getObject(String name) {
@@ -39,6 +42,7 @@ public class SessionBean implements Serializable {
 			}
 		} else {
 			return null;
+			// throw new Exception("Cannot be found null value name");
 		}
 	}
 

@@ -37,19 +37,14 @@
             android:label="@string/history_activity_label" >
         </activity>
         <activity
-            android:name=".ProfileHistoryActivity"
-            android:icon="@drawable/ic_launcher"
-            android:label="@string/pro_history_activity_label" >
-        </activity>
-        <activity
-            android:name=".RecordHistoryActivity"
-            android:icon="@drawable/ic_launcher"
-            android:label="@string/rec_history_label" >
-        </activity>
-        <activity
             android:name=".HelpActivity"
             android:icon="@drawable/ic_launcher"
             android:label="@string/help_activity_label" >
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/profile_activity_label" >
         </activity>
     </application>
 

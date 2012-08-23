@@ -15,26 +15,27 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/fuel_type_l"
+                android:id="@+id/me_spinner_t"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|left"
                 android:layout_marginLeft="25dip"
                 android:layout_marginTop="10dip"
-                android:text="@string/main_activity_fuel_type"
+                android:text="@string/harmony_frag_spin1"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textSize="14dip" />
-
+
             <Spinner
-                android:id="@+id/fuel_type_i"
+                android:id="@+id/me_spinner"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" 
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="10dip"
                 android:layout_marginRight="10dip"
-                android:prompt="@string/main_activity_fuel_type_h"/>
+                android:entries="@array/fuel_types"
+                android:prompt="@string/main_activity_fuel_type_h" />
             
             <TextView
-                android:id="@+id/fuel_unit_price_l"
+                android:id="@+id/me_spinner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|left"
@@ -43,7 +44,7 @@
                 android:text="@string/main_activity_fuel_unit_price"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textSize="14dip" />
-
+
             <EditText
                 android:id="@+id/fuel_unit_price_i"
                 android:layout_width="fill_parent"
@@ -67,7 +68,7 @@
                 android:text="@string/main_activity_fuel_by_price"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textSize="14dip" />
-
+
             <EditText
                 android:id="@+id/main_activity_fuel_by_price_i"
                 android:layout_width="fill_parent"
@@ -76,7 +77,7 @@
                 android:layout_marginRight="10dip"
                 android:ems="10"
                 android:hint="@string/main_activity_fuel_by_price_h"
-                android:inputType="numberDecimal" />
+                android:inputType="number" />
 
              <TextView
                 android:id="@+id/main_activity_fuel_l"
@@ -97,7 +98,7 @@
                 android:layout_marginRight="10dip"
                 android:ems="10"
                 android:hint="@string/main_activity_fuel_h"
-                android:inputType="numberDecimal" />
+                android:inputType="number" />
             
             <TextView
                 android:id="@+id/main_activity_km_l"
@@ -118,7 +119,7 @@
                 android:layout_marginRight="10dip"
                 android:ems="10"
                 android:hint="@string/main_activity_km_h"
-                android:inputType="numberDecimal" />
+                android:inputType="number" />
 
             <Button
                 android:id="@+id/main_activity_calculate_b"

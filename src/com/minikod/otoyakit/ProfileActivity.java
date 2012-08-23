@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class AboutUsActivity extends Activity{
+public class ProfileActivity extends Activity{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -38,21 +38,21 @@ public class AboutUsActivity extends Activity{
 
 	public void toHelp() {
 		Intent intent = new Intent();
-		intent.setClass(AboutUsActivity.this, HelpActivity.class);
+		intent.setClass(ProfileActivity.this, HelpActivity.class);
 		startActivity(intent);
 		finish();
 	}
 
 	public void toPast() {
 		Intent intent = new Intent();
-		intent.setClass(AboutUsActivity.this, HistoryActivity.class);
+		intent.setClass(ProfileActivity.this, HistoryActivity.class);
 		startActivity(intent);
 		finish();
 	}
 	@Override
 	public void onBackPressed() {
 		Intent intent = new Intent();
-		intent.setClass(AboutUsActivity.this, MainActivity.class);
+		intent.setClass(ProfileActivity.this, MainActivity.class);
 		startActivity(intent);
 		finish();
 	}	
